@@ -1,4 +1,4 @@
-package com.example.alphamensa;
+package bigmensa.gui.alphamensa;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class LoginAvvio extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 250);
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginAvvio.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 250, 370);
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();

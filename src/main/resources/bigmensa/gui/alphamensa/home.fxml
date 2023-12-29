@@ -2,24 +2,39 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="260.0" style="-fx-background-color: #2C3539;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <bottom>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button layoutY="171.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Menù" textFill="WHITE" />
-            <Button layoutX="65.0" layoutY="171.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Prenota" textFill="WHITE" />
-            <Button layoutX="130.0" layoutY="171.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Posti itr" textFill="WHITE" />
-            <Button layoutX="195.0" layoutY="171.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Ricarica" textFill="WHITE" />
-         </children>
-      </AnchorPane>
-   </bottom>
-   <top>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <FontAwesomeIconView fill="DARKRED" glyphName="GEAR" layoutX="220.0" layoutY="40.0" size="30" />
-         </children></AnchorPane>
-   </top>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="260.0" style="-fx-background-color: #2C3539;" xmlns="http://javafx.com/javafx/19.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bigmensa.gui.alphamensa.HomeController">
+    <bottom>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutY="171.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Menù" textFill="WHITE" />
+                <Button fx:id="prenota" layoutX="65.0" layoutY="171.0" mnemonicParsing="false" onAction="#onPrenotaClick" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Prenota" textFill="WHITE" />
+                <Button layoutX="130.0" layoutY="171.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Posti itr" textFill="WHITE" />
+                <Button layoutX="195.0" layoutY="171.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Ricarica" textFill="WHITE" />
+                <Text layoutX="14.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARIO ROSSI" />
+            </children>
+        </AnchorPane>
+    </bottom>
+    <top>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <FontAwesomeIconView fill="DARKRED" glyphName="GEAR" layoutX="220.0" layoutY="40.0" size="30" />
+                <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="68.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../QR_Code_example.png" />
+                    </image>
+                </ImageView>
+                <Line endX="21.0" layoutX="142.0" layoutY="100.0" startX="-32.0" />
+                <FontAwesomeIconView glyphName="EYE" layoutX="86.0" layoutY="101.0" size="20" wrappingWidth="20.857142448425293" />
+                <Text layoutX="121.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21,45" wrappingWidth="29.9765625" />
+                <Text fontSmoothingType="LCD" layoutX="115.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saldo" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+    </top>
 </BorderPane>

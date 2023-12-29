@@ -18,22 +18,13 @@ public class LoginController {
     @FXML
     protected void onButtonClick(ActionEvent event) throws IOException {
         try {
-            // Carica la nuova pagina da un altro file FXML
             FXMLLoader loader = new FXMLLoader(LoginAvvio.class.getResource("home.fxml"));
             Parent root = loader.load();
-
-            // Crea la nuova scena
             Scene nuovaScena = new Scene(root);
-
-            // Ottieni il palcoscenico corrente
             Stage stage = (Stage) login.getScene().getWindow();
-
-            // Imposta la nuova scena sul palcoscenico
             stage.setScene(nuovaScena);
-
         } catch (IOException e) {
             e.printStackTrace();
-            // Gestisci l'eccezione se il caricamento della nuova pagina fallisce
         }
     }
 }

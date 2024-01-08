@@ -5,13 +5,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="380.0" prefWidth="250.0" style="-fx-background-color: #2C3539;" xmlns="http://javafx.com/javafx/19.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bigmensa.gui.alphamensa.PrenotaController">
-   <children>
-      <ChoiceBox layoutX="50.0" layoutY="106.0" prefWidth="150.0" />
-      <Text fill="WHITE" layoutX="50.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona ora" />
-      <ChoiceBox layoutX="50.0" layoutY="178.0" prefWidth="150.0" />
-      <Text fill="WHITE" layoutX="50.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona posto" />
-      <Button layoutX="92.0" layoutY="267.0" mnemonicParsing="false" text="Prenota" />
-   </children>
+    <children>
+        <ChoiceBox fx:id="ora" layoutX="50.0" layoutY="106.0" prefWidth="150.0" />
+        <Text fill="WHITE" layoutX="50.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona ora" />
+        <ChoiceBox fx:id="posto" layoutX="50.0" layoutY="178.0" prefWidth="150.0" />
+        <Text fill="WHITE" layoutX="50.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona posto" />
+        <Button fx:id="prenota" layoutX="92.0" layoutY="267.0" mnemonicParsing="false" onAction="#onPrenotaClick" style="-fx-background-color: #8B0000;" text="Prenota" textFill="WHITE" />
+    </children>
 </AnchorPane>

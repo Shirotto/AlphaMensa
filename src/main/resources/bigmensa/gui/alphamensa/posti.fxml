@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="380.0" prefWidth="250.0" style="-fx-background-color: #2C3539;" xmlns="http://javafx.com/javafx/19.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bigmensa.gui.alphamensa.PostiController">
+   <children>
+      <Text fill="WHITE" layoutX="14.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visualizza Posti Disponibili In Tempo Reale" />
+      <Button fx:id="visualizza" layoutX="75.0" layoutY="190.0" mnemonicParsing="false" onAction="#OnvisualClick" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #8B0000;" text="Visualizza" textFill="WHITE" />
+   </children>
+</AnchorPane>

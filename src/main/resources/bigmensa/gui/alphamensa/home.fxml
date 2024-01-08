@@ -15,9 +15,8 @@
             <children>
                 <Button layoutY="171.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Menù" textFill="WHITE" />
                 <Button fx:id="prenota" layoutX="65.0" layoutY="171.0" mnemonicParsing="false" onAction="#onPrenotaClick" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Prenota" textFill="WHITE" />
-                <Button layoutX="130.0" layoutY="171.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Posti itr" textFill="WHITE" />
+                <Button fx:id="posti" layoutX="130.0" layoutY="171.0" mnemonicParsing="false" onAction="#onPostiClick" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Posti itr" textFill="WHITE" />
                 <Button layoutX="195.0" layoutY="171.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #8B0000; -fx-border-color: BLACK;" text="Ricarica" textFill="WHITE" />
-                <Text fill="WHITE" layoutX="14.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARIO ROSSI" />
             </children>
         </AnchorPane>
     </bottom>
@@ -25,15 +24,16 @@
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
                 <FontAwesomeIconView glyphName="GEAR" layoutX="220.0" layoutY="40.0" size="30" />
-                <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="68.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="169.0" fitWidth="170.0" layoutX="46.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../../QR_Code_example.png" />
                     </image>
                 </ImageView>
-                <Line endX="21.0" layoutX="142.0" layoutY="100.0" startX="-32.0" stroke="WHITE" />
-                <FontAwesomeIconView fill="#8d8d8d" glyphName="EYE" layoutX="86.0" layoutY="101.0" size="20" wrappingWidth="20.857142448425293" />
-                <Text fill="WHITE" layoutX="121.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21,45" wrappingWidth="29.9765625" />
-                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="115.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saldo" textAlignment="CENTER" />
+                <Line endX="9.899993896484375" layoutX="145.0" layoutY="115.0" startX="-32.0" stroke="WHITE" />
+                <FontAwesomeIconView fill="#8d8d8d" glyphName="EYE" layoutX="87.0" layoutY="113.0" size="20" wrappingWidth="20.857142448425293" />
+                <Text fill="WHITE" layoutX="112.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21,45 €" wrappingWidth="45.9765625" />
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="115.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saldo" textAlignment="CENTER" />
+                <Text fill="WHITE" layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARIO ROSSI" />
             </children>
         </AnchorPane>
     </top>
